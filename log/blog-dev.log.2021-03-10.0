@@ -1,0 +1,366 @@
+2021-03-10 09:09:49.037  INFO 16444 --- [restartedMain] com.hpl.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_221 on LAPTOP-U92HLDB9 with PID 16444 (B:\！博客系统\blog\target\classes started by 24303 in B:\！博客系统\blog)
+2021-03-10 09:09:49.050 DEBUG 16444 --- [restartedMain] com.hpl.blog.BlogApplication             : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-03-10 09:09:49.051  INFO 16444 --- [restartedMain] com.hpl.blog.BlogApplication             : The following profiles are active: dev
+2021-03-10 09:09:49.236  INFO 16444 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-10 09:09:49.239  INFO 16444 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-10 09:09:54.100  INFO 16444 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-10 09:09:55.764  INFO 16444 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1616 ms. Found 5 JPA repository interfaces.
+2021-03-10 09:09:56.140  WARN 16444 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hpl.blog]' package. Please check your configuration.
+2021-03-10 09:09:58.629  INFO 16444 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-10 09:09:58.654  INFO 16444 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-10 09:09:58.654  INFO 16444 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-10 09:09:59.767  INFO 16444 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-10 09:09:59.767  INFO 16444 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 10526 ms
+2021-03-10 09:10:00.774  INFO 16444 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-10 09:10:00.920  INFO 16444 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-03-10 09:10:01.361  INFO 16444 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-10 09:10:01.689  INFO 16444 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : defaultDataSource - Starting...
+2021-03-10 09:10:02.086  INFO 16444 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : defaultDataSource - Start completed.
+2021-03-10 09:10:02.150  INFO 16444 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-03-10 09:10:04.699  INFO 16444 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-10 09:10:04.720  INFO 16444 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-10 09:10:04.808  INFO 16444 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-03-10 09:10:07.248  WARN 16444 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-10 09:10:07.727  INFO 16444 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-10 09:10:09.050  INFO 16444 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-10 09:10:09.066  INFO 16444 --- [restartedMain] com.hpl.blog.BlogApplication             : Started BlogApplication in 23.313 seconds (JVM running for 30.875)
+2021-03-10 09:10:11.546  INFO 16444 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-10 09:10:11.547  INFO 16444 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-10 09:10:11.549  INFO 16444 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-03-10 09:10:11.636  INFO 16444 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:10:11.641  INFO 16444 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.indexController.index', args=[Page request [number: 0, size 7, sort: viewNum: DESC], {}]}
+2021-03-10 09:10:11.944  WARN 16444 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-03-10 09:10:11.997  INFO 16444 --- [http-nio-8080-exec-2] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:10:11.997  INFO 16444 --- [http-nio-8080-exec-2] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.indexController.index', args=[Page request [number: 0, size 7, sort: viewNum: DESC], {}]}
+2021-03-10 09:10:12.006  WARN 16444 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-03-10 09:10:12.038  WARN 16444 --- [http-nio-8080-exec-2] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-03-10 09:10:12.108  INFO 16444 --- [http-nio-8080-exec-2] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:10:12.109  INFO 16444 --- [http-nio-8080-exec-2] com.hpl.blog.aspect.LogAspect            : Result: front/index
+2021-03-10 09:10:12.109  INFO 16444 --- [http-nio-8080-exec-2] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:10:12.117  INFO 16444 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:10:12.118  INFO 16444 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : Result: front/index
+2021-03-10 09:10:12.118  INFO 16444 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:10:13.979  INFO 16444 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:10:13.982  INFO 16444 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.indexController.index', args=[Page request [number: 0, size 7, sort: viewNum: DESC], {}]}
+2021-03-10 09:10:14.302  INFO 16444 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:10:14.302  INFO 16444 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : Result: front/index
+2021-03-10 09:10:14.302  INFO 16444 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:10:25.051  INFO 16444 --- [http-nio-8080-exec-6] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:10:25.051  INFO 16444 --- [http-nio-8080-exec-6] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/footerData', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.FooterController.footerData', args=[{}]}
+2021-03-10 09:10:25.072  INFO 16444 --- [http-nio-8080-exec-6] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:10:25.072  INFO 16444 --- [http-nio-8080-exec-6] com.hpl.blog.aspect.LogAspect            : Result: front/_fragments :: footerDataFragments
+2021-03-10 09:10:25.073  INFO 16444 --- [http-nio-8080-exec-6] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:10:26.429  INFO 16444 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:10:26.430  INFO 16444 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/footerData', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.FooterController.footerData', args=[{}]}
+2021-03-10 09:10:26.439  INFO 16444 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:10:26.439  INFO 16444 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : Result: front/_fragments :: footerDataFragments
+2021-03-10 09:10:26.439  INFO 16444 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:10:35.738  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:10:35.739  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/footerData', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.FooterController.footerData', args=[{}]}
+2021-03-10 09:10:35.748  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:10:35.748  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : Result: front/_fragments :: footerDataFragments
+2021-03-10 09:10:35.748  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:10:42.498  INFO 16444 --- [http-nio-8080-exec-5] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:10:42.498  INFO 16444 --- [http-nio-8080-exec-5] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/footerData', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.FooterController.footerData', args=[{}]}
+2021-03-10 09:10:42.508  INFO 16444 --- [http-nio-8080-exec-5] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:10:42.509  INFO 16444 --- [http-nio-8080-exec-5] com.hpl.blog.aspect.LogAspect            : Result: front/_fragments :: footerDataFragments
+2021-03-10 09:10:42.509  INFO 16444 --- [http-nio-8080-exec-5] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:10:50.933  INFO 16444 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:10:50.933  INFO 16444 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/footerData', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.FooterController.footerData', args=[{}]}
+2021-03-10 09:10:50.943  INFO 16444 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:10:50.944  INFO 16444 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : Result: front/_fragments :: footerDataFragments
+2021-03-10 09:10:50.944  INFO 16444 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:16:58.479  INFO 16444 --- [http-nio-8080-exec-9] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:16:58.481  INFO 16444 --- [http-nio-8080-exec-9] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/footerData', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.FooterController.footerData', args=[{}]}
+2021-03-10 09:16:58.494  INFO 16444 --- [http-nio-8080-exec-9] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:16:58.494  INFO 16444 --- [http-nio-8080-exec-9] com.hpl.blog.aspect.LogAspect            : Result: front/_fragments :: footerDataFragments
+2021-03-10 09:16:58.494  INFO 16444 --- [http-nio-8080-exec-9] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:17:02.101  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:17:02.102  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.indexController.index', args=[Page request [number: 0, size 7, sort: viewNum: DESC], {}]}
+2021-03-10 09:17:02.145  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:17:02.146  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : Result: front/index
+2021-03-10 09:17:02.146  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:17:04.111  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:17:04.111  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/footerData', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.FooterController.footerData', args=[{}]}
+2021-03-10 09:17:04.118  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:17:04.118  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : Result: front/_fragments :: footerDataFragments
+2021-03-10 09:17:04.118  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:17:04.980  INFO 16444 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:17:04.981  INFO 16444 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/blog/35', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.BlogController.DisplayBlogById', args=[35, {}]}
+2021-03-10 09:17:05.161  INFO 16444 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:17:05.161  INFO 16444 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : Result: front/blog
+2021-03-10 09:17:05.161  INFO 16444 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:17:06.609  INFO 16444 --- [http-nio-8080-exec-7] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:17:06.610  INFO 16444 --- [http-nio-8080-exec-7] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/footerData', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.FooterController.footerData', args=[{}]}
+2021-03-10 09:17:06.618  INFO 16444 --- [http-nio-8080-exec-7] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:17:06.619  INFO 16444 --- [http-nio-8080-exec-7] com.hpl.blog.aspect.LogAspect            : Result: front/_fragments :: footerDataFragments
+2021-03-10 09:17:06.619  INFO 16444 --- [http-nio-8080-exec-7] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:17:07.452  INFO 16444 --- [http-nio-8080-exec-2] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:17:07.453  INFO 16444 --- [http-nio-8080-exec-2] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/comment/35', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.CommentController.comment', args=[35, {}]}
+2021-03-10 09:17:07.533  INFO 16444 --- [http-nio-8080-exec-2] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:17:07.534  INFO 16444 --- [http-nio-8080-exec-2] com.hpl.blog.aspect.LogAspect            : Result: front/blog :: commentList
+2021-03-10 09:17:07.534  INFO 16444 --- [http-nio-8080-exec-2] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:17:25.095  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:17:25.095  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/postComment', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.CommentController.postComment', args=[Comment{id=null, nickname='黄月月鸟龙', email='243031504@qq.com', content='沙发
+', avatar='null', createTime=null, blog=Blog(id=35, title=null, content=null, firstPicture=null, flag=null, viewNum=null, appreciationState=false, shareState=false, commentState=false, publishState=false, recommendState=false, description=null, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], typeId=null, tagIds=null), replyComments=[], parentComment=Comment{id=-1, nickname='null', email='null', content='null', avatar='null', createTime=null, blog=null, replyComments=[], parentComment=null, usertype=false}, usertype=false}, org.apache.catalina.session.StandardSessionFacade@3bb8fa28]}
+2021-03-10 09:17:25.110  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:17:25.110  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : Result: redirect:/front/comment/35
+2021-03-10 09:17:25.110  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:17:25.121  INFO 16444 --- [http-nio-8080-exec-4] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:17:25.122  INFO 16444 --- [http-nio-8080-exec-4] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/comment/35', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.CommentController.comment', args=[35, {}]}
+2021-03-10 09:17:25.157  INFO 16444 --- [http-nio-8080-exec-4] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:17:25.157  INFO 16444 --- [http-nio-8080-exec-4] com.hpl.blog.aspect.LogAspect            : Result: front/blog :: commentList
+2021-03-10 09:17:25.158  INFO 16444 --- [http-nio-8080-exec-4] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:17:32.341  INFO 16444 --- [http-nio-8080-exec-6] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:17:32.341  INFO 16444 --- [http-nio-8080-exec-6] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/postComment', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.CommentController.postComment', args=[Comment{id=null, nickname='黄月月鸟龙', email='243031504@qq.com', content='~~~', avatar='null', createTime=null, blog=Blog(id=35, title=null, content=null, firstPicture=null, flag=null, viewNum=null, appreciationState=false, shareState=false, commentState=false, publishState=false, recommendState=false, description=null, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], typeId=null, tagIds=null), replyComments=[], parentComment=Comment{id=76, nickname='null', email='null', content='null', avatar='null', createTime=null, blog=null, replyComments=[], parentComment=null, usertype=false}, usertype=false}, org.apache.catalina.session.StandardSessionFacade@3bb8fa28]}
+2021-03-10 09:17:32.357  INFO 16444 --- [http-nio-8080-exec-6] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:17:32.358  INFO 16444 --- [http-nio-8080-exec-6] com.hpl.blog.aspect.LogAspect            : Result: redirect:/front/comment/35
+2021-03-10 09:17:32.358  INFO 16444 --- [http-nio-8080-exec-6] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:17:32.390  INFO 16444 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:17:32.390  INFO 16444 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/comment/35', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.CommentController.comment', args=[35, {}]}
+2021-03-10 09:17:32.408  INFO 16444 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:17:32.408  INFO 16444 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : Result: front/blog :: commentList
+2021-03-10 09:17:32.408  INFO 16444 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:17:38.857  INFO 16444 --- [http-nio-8080-exec-5] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:17:38.857  INFO 16444 --- [http-nio-8080-exec-5] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/types/-1', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.TypesController_front.types', args=[Page request [number: 0, size 4, sort: viewNum: DESC], -1, {}]}
+2021-03-10 09:17:39.067  INFO 16444 --- [http-nio-8080-exec-5] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:17:39.069  INFO 16444 --- [http-nio-8080-exec-5] com.hpl.blog.aspect.LogAspect            : Result: front/types
+2021-03-10 09:17:39.069  INFO 16444 --- [http-nio-8080-exec-5] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:17:40.528  INFO 16444 --- [http-nio-8080-exec-2] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:17:40.528  INFO 16444 --- [http-nio-8080-exec-2] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/footerData', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.FooterController.footerData', args=[{}]}
+2021-03-10 09:17:40.538  INFO 16444 --- [http-nio-8080-exec-2] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:17:40.538  INFO 16444 --- [http-nio-8080-exec-2] com.hpl.blog.aspect.LogAspect            : Result: front/_fragments :: footerDataFragments
+2021-03-10 09:17:40.538  INFO 16444 --- [http-nio-8080-exec-2] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:17:46.610  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:17:46.610  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/search', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.SearchController.search', args=[Page request [number: 0, size 100, sort: updateTime: DESC], C, {}]}
+2021-03-10 09:17:46.641  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:17:46.641  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : Result: front/search
+2021-03-10 09:17:46.641  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:17:48.584  INFO 16444 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:17:48.584  INFO 16444 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/footerData', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.FooterController.footerData', args=[{}]}
+2021-03-10 09:17:48.592  INFO 16444 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:17:48.592  INFO 16444 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : Result: front/_fragments :: footerDataFragments
+2021-03-10 09:17:48.592  INFO 16444 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:17:58.162  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:17:58.163  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/search', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.SearchController.search', args=[Page request [number: 0, size 100, sort: updateTime: DESC], 排序, {}]}
+2021-03-10 09:17:58.181  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:17:58.182  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : Result: front/search
+2021-03-10 09:17:58.183  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:17:59.415  INFO 16444 --- [http-nio-8080-exec-6] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:17:59.415  INFO 16444 --- [http-nio-8080-exec-6] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/footerData', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.FooterController.footerData', args=[{}]}
+2021-03-10 09:17:59.424  INFO 16444 --- [http-nio-8080-exec-6] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:17:59.424  INFO 16444 --- [http-nio-8080-exec-6] com.hpl.blog.aspect.LogAspect            : Result: front/_fragments :: footerDataFragments
+2021-03-10 09:17:59.424  INFO 16444 --- [http-nio-8080-exec-6] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:18:02.481  INFO 16444 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:18:02.481  INFO 16444 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/blog/27', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.BlogController.DisplayBlogById', args=[27, {}]}
+2021-03-10 09:18:02.530  INFO 16444 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:18:02.531  INFO 16444 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : Result: front/blog
+2021-03-10 09:18:02.531  INFO 16444 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:18:03.485  INFO 16444 --- [http-nio-8080-exec-4] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:18:03.486  INFO 16444 --- [http-nio-8080-exec-4] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/footerData', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.FooterController.footerData', args=[{}]}
+2021-03-10 09:18:03.495  INFO 16444 --- [http-nio-8080-exec-4] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:18:03.495  INFO 16444 --- [http-nio-8080-exec-4] com.hpl.blog.aspect.LogAspect            : Result: front/_fragments :: footerDataFragments
+2021-03-10 09:18:03.495  INFO 16444 --- [http-nio-8080-exec-4] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:18:04.591  INFO 16444 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:18:04.591  INFO 16444 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/comment/27', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.CommentController.comment', args=[27, {}]}
+2021-03-10 09:18:04.602  INFO 16444 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:18:04.602  INFO 16444 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : Result: front/blog :: commentList
+2021-03-10 09:18:04.669  INFO 16444 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:18:33.845  INFO 16444 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:18:33.845  INFO 16444 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/types/40', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.TypesController_front.types', args=[Page request [number: 0, size 4, sort: viewNum: DESC], 40, {}]}
+2021-03-10 09:18:33.883  INFO 16444 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:18:33.883  INFO 16444 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : Result: front/types
+2021-03-10 09:18:33.883  INFO 16444 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:18:34.962  INFO 16444 --- [http-nio-8080-exec-10] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:18:34.962  INFO 16444 --- [http-nio-8080-exec-10] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/footerData', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.FooterController.footerData', args=[{}]}
+2021-03-10 09:18:34.968  INFO 16444 --- [http-nio-8080-exec-10] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:18:34.968  INFO 16444 --- [http-nio-8080-exec-10] com.hpl.blog.aspect.LogAspect            : Result: front/_fragments :: footerDataFragments
+2021-03-10 09:18:34.968  INFO 16444 --- [http-nio-8080-exec-10] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:18:38.082  INFO 16444 --- [http-nio-8080-exec-9] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:18:38.082  INFO 16444 --- [http-nio-8080-exec-9] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/tags/-1', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.TagsController_front.tags', args=[Page request [number: 0, size 5, sort: viewNum: DESC], -1, {}]}
+2021-03-10 09:18:38.188  INFO 16444 --- [http-nio-8080-exec-9] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:18:38.188  INFO 16444 --- [http-nio-8080-exec-9] com.hpl.blog.aspect.LogAspect            : Result: front/tags
+2021-03-10 09:18:38.188  INFO 16444 --- [http-nio-8080-exec-9] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:18:39.379  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:18:39.379  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/footerData', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.FooterController.footerData', args=[{}]}
+2021-03-10 09:18:39.385  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:18:39.386  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : Result: front/_fragments :: footerDataFragments
+2021-03-10 09:18:39.386  INFO 16444 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:18:43.032  INFO 16444 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:18:43.032  INFO 16444 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/tags/24', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.TagsController_front.tags', args=[Page request [number: 0, size 5, sort: viewNum: DESC], 24, {}]}
+2021-03-10 09:18:43.083  INFO 16444 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:18:43.084  INFO 16444 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : Result: front/tags
+2021-03-10 09:18:43.084  INFO 16444 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:18:44.066  INFO 16444 --- [http-nio-8080-exec-5] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:18:44.066  INFO 16444 --- [http-nio-8080-exec-5] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/footerData', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.FooterController.footerData', args=[{}]}
+2021-03-10 09:18:44.073  INFO 16444 --- [http-nio-8080-exec-5] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:18:44.073  INFO 16444 --- [http-nio-8080-exec-5] com.hpl.blog.aspect.LogAspect            : Result: front/_fragments :: footerDataFragments
+2021-03-10 09:18:44.073  INFO 16444 --- [http-nio-8080-exec-5] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:18:50.944  INFO 16444 --- [http-nio-8080-exec-7] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:18:50.945  INFO 16444 --- [http-nio-8080-exec-7] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/blog/35', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.BlogController.DisplayBlogById', args=[35, {}]}
+2021-03-10 09:18:50.966  INFO 16444 --- [http-nio-8080-exec-7] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:18:50.966  INFO 16444 --- [http-nio-8080-exec-7] com.hpl.blog.aspect.LogAspect            : Result: front/blog
+2021-03-10 09:18:50.966  INFO 16444 --- [http-nio-8080-exec-7] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:18:52.222  INFO 16444 --- [http-nio-8080-exec-7] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:18:52.223  INFO 16444 --- [http-nio-8080-exec-7] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/footerData', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.FooterController.footerData', args=[{}]}
+2021-03-10 09:18:52.230  INFO 16444 --- [http-nio-8080-exec-7] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:18:52.231  INFO 16444 --- [http-nio-8080-exec-7] com.hpl.blog.aspect.LogAspect            : Result: front/_fragments :: footerDataFragments
+2021-03-10 09:18:52.231  INFO 16444 --- [http-nio-8080-exec-7] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:18:52.889  INFO 16444 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:18:52.889  INFO 16444 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/comment/35', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.CommentController.comment', args=[35, {}]}
+2021-03-10 09:18:52.975  INFO 16444 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:18:52.975  INFO 16444 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : Result: front/blog :: commentList
+2021-03-10 09:18:52.975  INFO 16444 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:18:56.043  INFO 16444 --- [http-nio-8080-exec-2] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:18:56.045  INFO 16444 --- [http-nio-8080-exec-2] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/tags/19', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.TagsController_front.tags', args=[Page request [number: 0, size 5, sort: viewNum: DESC], 19, {}]}
+2021-03-10 09:18:56.238  INFO 16444 --- [http-nio-8080-exec-2] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:18:56.238  INFO 16444 --- [http-nio-8080-exec-2] com.hpl.blog.aspect.LogAspect            : Result: front/tags
+2021-03-10 09:18:56.238  INFO 16444 --- [http-nio-8080-exec-2] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:18:57.366  INFO 16444 --- [http-nio-8080-exec-9] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:18:57.366  INFO 16444 --- [http-nio-8080-exec-9] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/footerData', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.FooterController.footerData', args=[{}]}
+2021-03-10 09:18:57.374  INFO 16444 --- [http-nio-8080-exec-9] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:18:57.374  INFO 16444 --- [http-nio-8080-exec-9] com.hpl.blog.aspect.LogAspect            : Result: front/_fragments :: footerDataFragments
+2021-03-10 09:18:57.375  INFO 16444 --- [http-nio-8080-exec-9] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:22:23.992  INFO 19536 --- [restartedMain] com.hpl.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_221 on LAPTOP-U92HLDB9 with PID 19536 (B:\！博客系统\blog\target\classes started by 24303 in B:\！博客系统\blog)
+2021-03-10 09:22:23.997 DEBUG 19536 --- [restartedMain] com.hpl.blog.BlogApplication             : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-03-10 09:22:23.998  INFO 19536 --- [restartedMain] com.hpl.blog.BlogApplication             : The following profiles are active: dev
+2021-03-10 09:22:24.085  INFO 19536 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-10 09:22:24.085  INFO 19536 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-10 09:22:25.601  INFO 19536 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-10 09:22:25.807  INFO 19536 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 189 ms. Found 5 JPA repository interfaces.
+2021-03-10 09:22:26.116  WARN 19536 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hpl.blog]' package. Please check your configuration.
+2021-03-10 09:22:27.815  INFO 19536 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-10 09:22:27.836  INFO 19536 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-10 09:22:27.837  INFO 19536 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-10 09:22:28.443  INFO 19536 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-10 09:22:28.444  INFO 19536 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4357 ms
+2021-03-10 09:22:28.979  INFO 19536 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-10 09:22:29.081  INFO 19536 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-03-10 09:22:29.370  INFO 19536 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-10 09:22:29.601  INFO 19536 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : defaultDataSource - Starting...
+2021-03-10 09:22:29.956  INFO 19536 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : defaultDataSource - Start completed.
+2021-03-10 09:22:30.014  INFO 19536 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-03-10 09:22:31.565  INFO 19536 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-10 09:22:31.579  INFO 19536 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-10 09:22:31.629  INFO 19536 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-03-10 09:22:34.160  WARN 19536 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-10 09:22:34.724  INFO 19536 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-10 09:22:36.676  INFO 19536 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-10 09:22:36.712  INFO 19536 --- [restartedMain] com.hpl.blog.BlogApplication             : Started BlogApplication in 15.496 seconds (JVM running for 19.464)
+2021-03-10 09:22:43.616  INFO 19536 --- [http-nio-8080-exec-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-10 09:22:43.616  INFO 19536 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-10 09:22:43.619  INFO 19536 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-03-10 09:22:51.794  INFO 19536 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:22:51.799  INFO 19536 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/footerData', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.FooterController.footerData', args=[{}]}
+2021-03-10 09:22:51.890  INFO 19536 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:22:51.890  INFO 19536 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : Result: front/_fragments :: footerDataFragments
+2021-03-10 09:22:51.891  INFO 19536 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:22:54.642  INFO 19536 --- [http-nio-8080-exec-4] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:22:54.643  INFO 19536 --- [http-nio-8080-exec-4] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/footerData', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.FooterController.footerData', args=[{}]}
+2021-03-10 09:22:54.651  INFO 19536 --- [http-nio-8080-exec-4] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:22:54.651  INFO 19536 --- [http-nio-8080-exec-4] com.hpl.blog.aspect.LogAspect            : Result: front/_fragments :: footerDataFragments
+2021-03-10 09:22:54.651  INFO 19536 --- [http-nio-8080-exec-4] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:22:56.898  INFO 19536 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:22:56.898  INFO 19536 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/footerData', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.FooterController.footerData', args=[{}]}
+2021-03-10 09:22:56.913  INFO 19536 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:22:56.913  INFO 19536 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : Result: front/_fragments :: footerDataFragments
+2021-03-10 09:22:56.913  INFO 19536 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:23:42.171  INFO 19536 --- [http-nio-8080-exec-7] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:23:42.171  INFO 19536 --- [http-nio-8080-exec-7] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/footerData', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.FooterController.footerData', args=[{}]}
+2021-03-10 09:23:42.180  INFO 19536 --- [http-nio-8080-exec-7] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:23:42.180  INFO 19536 --- [http-nio-8080-exec-7] com.hpl.blog.aspect.LogAspect            : Result: front/_fragments :: footerDataFragments
+2021-03-10 09:23:42.181  INFO 19536 --- [http-nio-8080-exec-7] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:23:43.727  INFO 19536 --- [http-nio-8080-exec-9] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:23:43.728  INFO 19536 --- [http-nio-8080-exec-9] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.indexController.index', args=[Page request [number: 0, size 7, sort: viewNum: DESC], {}]}
+2021-03-10 09:23:43.785  WARN 19536 --- [http-nio-8080-exec-9] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-03-10 09:23:43.801  WARN 19536 --- [http-nio-8080-exec-9] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-03-10 09:23:43.821  INFO 19536 --- [http-nio-8080-exec-9] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:23:43.821  INFO 19536 --- [http-nio-8080-exec-9] com.hpl.blog.aspect.LogAspect            : Result: front/index
+2021-03-10 09:23:43.822  INFO 19536 --- [http-nio-8080-exec-9] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:23:46.974  INFO 19536 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:23:46.974  INFO 19536 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/footerData', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.FooterController.footerData', args=[{}]}
+2021-03-10 09:23:46.982  INFO 19536 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:23:46.982  INFO 19536 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : Result: front/_fragments :: footerDataFragments
+2021-03-10 09:23:46.982  INFO 19536 --- [http-nio-8080-exec-3] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:23:51.792  INFO 19536 --- [http-nio-8080-exec-7] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:23:51.792  INFO 19536 --- [http-nio-8080-exec-7] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/blog/35', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.BlogController.DisplayBlogById', args=[35, {}]}
+2021-03-10 09:23:51.992  INFO 19536 --- [http-nio-8080-exec-7] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:23:51.993  INFO 19536 --- [http-nio-8080-exec-7] com.hpl.blog.aspect.LogAspect            : Result: front/blog
+2021-03-10 09:23:51.993  INFO 19536 --- [http-nio-8080-exec-7] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:23:53.352  INFO 19536 --- [http-nio-8080-exec-2] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:23:53.353  INFO 19536 --- [http-nio-8080-exec-2] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/footerData', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.FooterController.footerData', args=[{}]}
+2021-03-10 09:23:53.363  INFO 19536 --- [http-nio-8080-exec-2] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:23:53.363  INFO 19536 --- [http-nio-8080-exec-2] com.hpl.blog.aspect.LogAspect            : Result: front/_fragments :: footerDataFragments
+2021-03-10 09:23:53.364  INFO 19536 --- [http-nio-8080-exec-2] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 09:23:54.059  INFO 19536 --- [http-nio-8080-exec-9] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 09:23:54.059  INFO 19536 --- [http-nio-8080-exec-9] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/comment/35', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.CommentController.comment', args=[35, {}]}
+2021-03-10 09:23:54.143  INFO 19536 --- [http-nio-8080-exec-9] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 09:23:54.144  INFO 19536 --- [http-nio-8080-exec-9] com.hpl.blog.aspect.LogAspect            : Result: front/blog :: commentList
+2021-03-10 09:23:54.144  INFO 19536 --- [http-nio-8080-exec-9] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 22:15:09.374  INFO 14512 --- [restartedMain] com.hpl.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_221 on LAPTOP-U92HLDB9 with PID 14512 (B:\！博客系统\blog\target\classes started by 24303 in B:\！博客系统\blog)
+2021-03-10 22:15:09.384 DEBUG 14512 --- [restartedMain] com.hpl.blog.BlogApplication             : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-03-10 22:15:09.385  INFO 14512 --- [restartedMain] com.hpl.blog.BlogApplication             : The following profiles are active: dev
+2021-03-10 22:15:09.550  INFO 14512 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-10 22:15:09.552  INFO 14512 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-10 22:15:14.067  INFO 14512 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-10 22:15:14.760  INFO 14512 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 608 ms. Found 5 JPA repository interfaces.
+2021-03-10 22:15:15.446  WARN 14512 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hpl.blog]' package. Please check your configuration.
+2021-03-10 22:15:18.568  INFO 14512 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-10 22:15:18.616  INFO 14512 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-10 22:15:18.617  INFO 14512 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-10 22:15:19.815  INFO 14512 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-10 22:15:19.817  INFO 14512 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 10261 ms
+2021-03-10 22:15:20.588  INFO 14512 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-10 22:15:20.804  INFO 14512 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-03-10 22:15:21.284  INFO 14512 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-10 22:15:21.622  INFO 14512 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : defaultDataSource - Starting...
+2021-03-10 22:15:22.160  INFO 14512 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : defaultDataSource - Start completed.
+2021-03-10 22:15:22.225  INFO 14512 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-03-10 22:15:25.146  INFO 14512 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-10 22:15:25.184  INFO 14512 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-10 22:15:25.304  INFO 14512 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-03-10 22:15:28.714  WARN 14512 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-10 22:15:29.495  INFO 14512 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-10 22:15:31.675  INFO 14512 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-10 22:15:31.696  INFO 14512 --- [restartedMain] com.hpl.blog.BlogApplication             : Started BlogApplication in 27.845 seconds (JVM running for 38.9)
+2021-03-10 22:17:32.081  INFO 11868 --- [restartedMain] com.hpl.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_221 on LAPTOP-U92HLDB9 with PID 11868 (B:\！博客系统\blog\target\classes started by 24303 in B:\！博客系统\blog)
+2021-03-10 22:17:32.086 DEBUG 11868 --- [restartedMain] com.hpl.blog.BlogApplication             : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-03-10 22:17:32.086  INFO 11868 --- [restartedMain] com.hpl.blog.BlogApplication             : The following profiles are active: dev
+2021-03-10 22:17:32.150  INFO 11868 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-10 22:17:32.150  INFO 11868 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-10 22:17:33.495  INFO 11868 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-10 22:17:33.758  INFO 11868 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 233 ms. Found 5 JPA repository interfaces.
+2021-03-10 22:17:34.042  WARN 11868 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hpl.blog]' package. Please check your configuration.
+2021-03-10 22:17:35.766  INFO 11868 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-10 22:17:35.781  INFO 11868 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-10 22:17:35.781  INFO 11868 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-10 22:17:36.274  INFO 11868 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-10 22:17:36.274  INFO 11868 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4123 ms
+2021-03-10 22:17:36.868  INFO 11868 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-10 22:17:36.968  INFO 11868 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-03-10 22:17:37.298  INFO 11868 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-10 22:17:37.508  INFO 11868 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : defaultDataSource - Starting...
+2021-03-10 22:17:37.827  INFO 11868 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : defaultDataSource - Start completed.
+2021-03-10 22:17:37.869  INFO 11868 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-03-10 22:17:40.084  INFO 11868 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-10 22:17:40.106  INFO 11868 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-10 22:17:40.177  INFO 11868 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-03-10 22:17:42.229  WARN 11868 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-10 22:17:42.574  INFO 11868 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-10 22:17:43.874  INFO 11868 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-10 22:17:43.892  INFO 11868 --- [restartedMain] com.hpl.blog.BlogApplication             : Started BlogApplication in 15.261 seconds (JVM running for 18.134)
+2021-03-10 22:17:49.929  INFO 11868 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-10 22:17:49.930  INFO 11868 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-10 22:17:49.938  INFO 11868 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2021-03-10 22:17:50.056  INFO 11868 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 22:17:50.064  INFO 11868 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.indexController.index', args=[Page request [number: 0, size 7, sort: viewNum: DESC], {}]}
+2021-03-10 22:17:50.413  WARN 11868 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-03-10 22:17:50.442  WARN 11868 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-03-10 22:17:50.469  INFO 11868 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 22:17:50.470  INFO 11868 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : Result: front/index
+2021-03-10 22:17:50.471  INFO 11868 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-10 22:17:54.178  INFO 11868 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-10 22:17:54.178  INFO 11868 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/footerData', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.FooterController.footerData', args=[{}]}
+2021-03-10 22:17:54.207  INFO 11868 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-10 22:17:54.208  INFO 11868 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : Result: front/_fragments :: footerDataFragments
+2021-03-10 22:17:54.208  INFO 11868 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------

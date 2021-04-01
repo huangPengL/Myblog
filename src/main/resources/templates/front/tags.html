@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!--suppress ALL-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="front/_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>标签</title>
+
+    <!-- CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../../static/css/my.css">
+</head>
+<body id="particle_background">
+<!-- HTML -->
+    <!----------------------------------导航---------------------------------->
+    <nav th:replace="front/_fragments :: nav(3)" id="nav-container" class="ui inverted attached segment m-shadow-small-black">
+        <div class="ui container">
+
+            <div class="ui inverted tabular stackable menu m-nav-padding-min">
+
+                <h1 class="ui blue header item">HPL-Blog</h1>
+                <a href="#" class="item m-mobile-hide m-item"><i class="home icon"></i> 首页</a>
+                <a href="#" class="item m-mobile-hide m-item"><i class="sort icon"></i>分类</a>
+                <a href="#" class="item m-mobile-hide m-item"><i class="tags icon"></i>标签</a>
+                <a href="#" class="item m-mobile-hide m-item"><i class="clone icon"></i>归档</a>
+                <a href="#" class="item m-mobile-hide m-item"><i class="male icon"></i>关于我</a>
+
+                <div class="right item m-mobile-hide m-item">
+                    <div class="ui icon input">
+                        <input type="text" placeholder="搜索">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+
+                <a href="#" class="ui menu toggle black icon button m-mobile-show">
+                    <i class="sidebar icon"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!----------------------------------标签---------------------------------->
+    <div id="waypointNav" class="m-container-min m-nav-padding-mid m-opacity-s">
+        <!--标签---头部信息-->
+        <div class="ui top attached segment">
+            <div class="ui middle aligned two column grid">
+                <div class="column">
+                    <h2 class="ui blue header m-text-spaced-massive">标签</h2>
+                </div>
+                <div class="right aligned column">
+                    共 <h3 class="ui large orange header m-display-inline-block">9</h3> 个
+                </div>
+            </div>
+        </div>
+
+        <!--标签---标签集合-->
+        <div class="ui attached segment center aligned">
+
+            <a th:each="tag : ${tags}" th:href="@{/front/tags/{tagId}(tagId = ${tag.id})}" href="#" class="ui left pointing large label m-margin-mid" th:classappend="${tag.id == activeTagId}?'teal'">
+                <i class="tags icon"></i>
+                <span th:text="${tag.name}">学习方法</span>
+                <div class="m-text-weight-tiny detail" th:text="${#arrays.length(tag.blogs)}">12</div>
+            </a>
+        </div>
+
+        <!--标签的文章展示-->
+        <div class="ui attached blue segment">
+            <div th:each="blog : ${page.content}" class="ui m-margin-bottom-min padded segment">
+                <div class="ui middle aligned mobile reversed stackable grid">
+                    <!--文章内容——文字-->
+                    <div class="eleven wide column">
+
+                        <h3 class="ui center aligned header">
+                            <a href="#" target="_blank" th:href="@{/front/blog/{id}(id=${blog.id})}" th:text="${blog.title}" style="color: black">
+                                服务器安装jdk、tomcat和mysql
+                            </a>
+                        </h3>
+                        <p class="ui m-text-spaced m-text-opacity-mid m-nav-padding-small" th:text="${blog.description}+'...'">
+                            在服务器上配置jdk，安装Tomcat和mysql。没有jdk什么Java程序也运行不了，所以首先安装jdk并配置系统变量。
+                            Tomcat可装可不装，SpringBoot项目有内置的Tomcat。mysql是必须要的，不然程序写来干嘛呢
+                        </p>
+
+                        <div class="ui stackable grid">
+                            <div class="left aligned eleven wide column">
+                                <div class="ui mini horizontal link list">
+                                    <div class="item">
+                                        <img src="https://s3.ax1x.com/2021/01/18/scZqUJ.jpg" alt="" class="ui avatar image" th:src="@{${blog.user.avatar}}">
+                                        <div class="content">
+                                            <a href="#" class="header" th:text="${blog.user.nickname}">黄鹏龙</a>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <span><i class="calendar icon"></i></span>
+                                        <span th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd')}">222</span>
+                                    </div>
+                                    <div class="item">
+                                        <span><i class="eye icon"></i></span>
+                                        <span th:text="${blog.viewNum}">222</span>
+                                    </div>
+                                    <div class="item">
+                                        <span><i class="comment alternate icon"></i></span>
+                                        <span th:text="${#arrays.length(blog.comments)}">222</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="right aligned five wide column">
+                                <a href="#" th:href="@{/front/types/{typeId}(typeId = ${blog.type.id})}" target="_blank" class="ui large orange basic label">
+                                    <span th:text="${blog.type.name}">学习笔记</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="ui stackable grid">
+                            <div class="sixteen column row">
+                                <a th:each="tag : ${blog.tags}" th:href="@{/front/tags/{tagId}(tagId = ${tag.id})}" target="_blank" href="#" class="ui basic left pointing label" style="margin:0px 5px 2px 5px !important;" th:classappend="${tag.id == activeTagId}?'teal'">
+                                    <i class="tags icon"></i>
+                                    <span th:text="${tag.name}">Java</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--文章内容——图片-->
+                    <div class="five wide column">
+                        <div class="ui centered card" >
+                            <a href="#" th:href="@{/front/blog/{id}(id=${blog.id})}" target="_blank">
+                                <img src="https://s3.ax1x.com/2021/01/18/scZbE4.png" alt="" class="ui rounded image" th:src="@{${blog.firstPicture}}">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--标签——底部切换页-->
+        <div class="ui bottom attached segment">
+            <div class="ui middle center aligned two column grid m-margin-top-bottom-min">
+                <div class="left aligned column m-padding-left-right-min">
+
+                    <a th:href="@{/front/tags/{tagId}(tagId = ${activeTagId},page=${page.number}-1)}" class="ui animated blue button" th:classappend="${page.first}==true? 'm-button-disabled-grey' : ''">
+                        <div class="visible content">上一页</div>
+                        <div class="hidden content">
+                            <i class="left arrow icon"></i>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="right aligned column m-padding-left-right-min">
+
+                    <a th:href="@{/front/tags/{tagId}(tagId = ${activeTagId},page=${page.number}+1)}" class="ui animated blue button" th:classappend="${page.last}==true? 'm-button-disabled-grey' : ''">
+                        <div class="visible content">下一页</div>
+                        <div class="hidden content">
+                            <i class="right arrow icon"></i>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!----------------------------------底部---------------------------------->
+    <footer th:replace="front/_fragments :: footer" class="ui inverted vertical segment m-nav-padding-mid">
+
+        <div class="ui center aligned container">
+
+            <!-- grid垂直分成16块,但是人为分成四大块(3,3,3,7) -->
+            <div class="ui inverted divided stackable grid">
+
+                <!--图片-->
+                <div class="three wide column">
+                    <div class="ui centered card " style="width:14em;">
+                        <img src="../static/images/wechat.jpg" alt="" class="ui rounded image" th:src="@{images/wechat.jpg}">
+                    </div>
+                </div>
+                <!--最新博客-->
+                <div class="three wide column">
+                    <h4 class="ui inverted header ">最新博客</h4>
+                    <div class="ui inverted link list m-text-spaced">
+                        <a href="#" class="item">AAA</a>
+                        <a href="#" class="item">BBBB</a>
+                        <a href="#" class="item">CCCCC</a>
+                        <a href="#" class="item">DDDDDD</a>
+                    </div>
+                </div>
+                <!--请联系我-->
+                <div class="three wide column">
+                    <h4 class="ui inverted header">请联系我</h4>
+                    <div class="ui inverted link list m-text-spaced">
+                        <p class="m-text-spaced m-text-lined m-text-opacity-mid">Email: 243031504@qq.com</p>
+                        <p class="m-text-spaced m-text-lined m-text-opacity-mid">Wechat: 15118821145</p>
+                        <p class="m-text-spaced m-text-lined m-text-opacity-mid">QQ: 243031504</p>
+                    </div>
+                </div>
+                <!--想说的话-->
+                <div class="six wide column">
+                    <h4 class="ui inverted header">想说的话</h4>
+                    <p class="m-text-spaced m-text-lined m-text-opacity-mid">
+                        Semantic 2.4 brings a new components for handling content loading ui placeholder, as well as a new
+                        type of segment used to reserve space for content: ui placeholder segment.
+                    </p>
+                </div>
+            </div>
+
+            <!--Copyright-->
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-spaced m-text-lined m-text-opacity-mid">
+                Copyright © 2020 - 2021 HPL-Blog Designed by Huangpenglong.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JS -->
+    <th:block th:replace="front/_fragments :: script">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    </th:block>
+
+    <script>
+        //点击小按钮触发该事件
+        $('.menu.toggle').click(function () {
+            $('.m-item').toggleClass('m-mobile-hide');
+        });
+
+    </script>
+
+</body>
+</html>

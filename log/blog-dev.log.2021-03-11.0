@@ -1,0 +1,46 @@
+2021-03-11 11:23:08.800  INFO 7760 --- [restartedMain] com.hpl.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_221 on LAPTOP-U92HLDB9 with PID 7760 (B:\！博客系统\blog\target\classes started by 24303 in B:\！博客系统\blog)
+2021-03-11 11:23:08.833 DEBUG 7760 --- [restartedMain] com.hpl.blog.BlogApplication             : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-03-11 11:23:08.834  INFO 7760 --- [restartedMain] com.hpl.blog.BlogApplication             : The following profiles are active: dev
+2021-03-11 11:23:09.177  INFO 7760 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-11 11:23:09.183  INFO 7760 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-11 11:23:12.610  INFO 7760 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-11 11:23:13.107  INFO 7760 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 466 ms. Found 5 JPA repository interfaces.
+2021-03-11 11:23:13.750  WARN 7760 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hpl.blog]' package. Please check your configuration.
+2021-03-11 11:23:17.522  INFO 7760 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-11 11:23:17.559  INFO 7760 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-11 11:23:17.560  INFO 7760 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-11 11:23:18.871  INFO 7760 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-11 11:23:18.872  INFO 7760 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9685 ms
+2021-03-11 11:23:20.002  INFO 7760 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-11 11:23:20.209  INFO 7760 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-03-11 11:23:20.824  INFO 7760 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-11 11:23:21.291  INFO 7760 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : defaultDataSource - Starting...
+2021-03-11 11:23:22.135  INFO 7760 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : defaultDataSource - Start completed.
+2021-03-11 11:23:22.217  INFO 7760 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-03-11 11:23:26.798  INFO 7760 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-11 11:23:26.823  INFO 7760 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-11 11:23:27.156  INFO 7760 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-03-11 11:23:32.531  WARN 7760 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-11 11:23:33.741  INFO 7760 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-11 11:23:37.299  INFO 7760 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-11 11:23:37.341  INFO 7760 --- [restartedMain] com.hpl.blog.BlogApplication             : Started BlogApplication in 34.407 seconds (JVM running for 46.987)
+2021-03-11 11:24:00.636  INFO 7760 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-11 11:24:00.645  INFO 7760 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-11 11:24:00.649  INFO 7760 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2021-03-11 11:24:01.665  INFO 7760 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-11 11:24:01.674  INFO 7760 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.indexController.index', args=[Page request [number: 0, size 7, sort: viewNum: DESC], {}]}
+2021-03-11 11:24:02.293  WARN 7760 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-03-11 11:24:02.338  WARN 7760 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-03-11 11:24:02.388  INFO 7760 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-11 11:24:02.388  INFO 7760 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : Result: front/index
+2021-03-11 11:24:02.389  INFO 7760 --- [http-nio-8080-exec-1] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-11 11:24:03.346  INFO 7760 --- [http-nio-8080-exec-2] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-11 11:24:03.346  INFO 7760 --- [http-nio-8080-exec-2] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.indexController.index', args=[Page request [number: 0, size 7, sort: viewNum: DESC], {}]}
+2021-03-11 11:24:03.460  INFO 7760 --- [http-nio-8080-exec-2] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-11 11:24:03.460  INFO 7760 --- [http-nio-8080-exec-2] com.hpl.blog.aspect.LogAspect            : Result: front/index
+2021-03-11 11:24:03.460  INFO 7760 --- [http-nio-8080-exec-2] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------
+2021-03-11 11:24:08.927  INFO 7760 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : -----------doBefore...----------
+2021-03-11 11:24:08.927  INFO 7760 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : Request: {url='http://127.0.0.1:8080/front/footerData', ip='127.0.0.1', classMethod='com.hpl.blog.web.front.FooterController.footerData', args=[{}]}
+2021-03-11 11:24:08.958  INFO 7760 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : -----------AfterReturn----------
+2021-03-11 11:24:08.959  INFO 7760 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : Result: front/_fragments :: footerDataFragments
+2021-03-11 11:24:08.959  INFO 7760 --- [http-nio-8080-exec-8] com.hpl.blog.aspect.LogAspect            : -----------doAfter----------

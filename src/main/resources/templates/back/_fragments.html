@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--suppress ALL-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<!--head-->
+<head th:fragment="head(title)">
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title th:replace="${title}">fragments</title>
+
+    <!-- CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../../static/css/animate.css" th:href="@{/css/animate.css}">
+    <link rel="stylesheet" href="../../static/lib/editormd/css/editormd.css" th:href="@{/lib/editormd/css/editormd.css}">
+    <link rel="stylesheet" href="../../static/css/my.css" th:href="@{/css/my.css}">
+</head>
+
+<body>
+
+
+    <!----------------------------------导航---------------------------------->
+    <nav th:fragment="nav1(n)" class="ui inverted attached segment m-opacity-m" style="border: 0px;">
+        <div class="ui container">
+
+            <div class="ui inverted secondary stackable menu m-nav-padding-min">
+
+                <h1 class="ui blue header item" style="margin-right: 10px;">HPL-Blog后台管理</h1>
+                <a href="#" th:href="@{/back/blogs}" class="item m-mobile-hide m-item"  th:classappend="${n == 1} ? 'm-border-bottom'"><i class="home icon"></i>首页</a>
+                <a href="#" th:href="@{/back/types}" class="item m-mobile-hide m-item"  th:classappend="${n == 2} ? 'm-border-bottom'"><i class="sort icon"></i>分类</a>
+                <a href="#" th:href="@{/back/tags}" class=" item m-mobile-hide m-item"  th:classappend="${n == 3} ? 'm-border-bottom'"><i class="tags icon"></i>标签</a>
+
+                <div class="right menu m-mobile-hide m-item">
+                    <div class="ui item dropdown">
+                        <div class="text">
+                            <img src="../../static/images/p1.jpg" alt="" class="ui avatar image" th:src="@{${session.user.avatar}}">
+                            <span th:text="${session.user.nickname}"></span>
+                        </div>
+                        <i class="dropdown icon"></i>
+
+                        <div class="menu">
+                            <a href="#" class="item" th:href="@{/back/logout}">退出登录</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="ui menu toggle black icon button m-mobile-show">
+                    <i class="sidebar icon"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!----------------------------------底部---------------------------------->
+    <footer th:fragment="footer" class="ui inverted vertical segment m-nav-padding-mid m-opacity-m">
+
+        <div class="ui center aligned container">
+
+            <!-- grid垂直分成16块,但是人为分成四大块(3,3,3,7) -->
+            <div class="ui inverted divided stackable grid">
+
+                <!--全栈信息-->
+                <div class="five wide column">
+                    <div id="footerData-container" th:fragment="footerDataFragments">
+                        <div class="ui mini orange statistic">
+                            <div class="value" th:text="${totalViewNum}">99999</div>
+                            <div class="label" style="color: ghostwhite">总浏览数</div>
+                        </div>
+                        <div class="ui mini orange statistic">
+                            <div class="value" th:text="${totalBlogNum}">99999</div>
+                            <div class="label" style="color: ghostwhite">文章总数</div>
+                        </div>
+                        <br>
+                        <div class="ui mini orange statistic">
+                            <div class="value" th:text="${totalCommentNum}">99999</div>
+                            <div class="label" style="color: ghostwhite">评论总数</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--请联系我-->
+                <div class="four wide column">
+                    <h4 class="ui inverted header">请联系我</h4>
+                    <div class="ui inverted link list m-text-spaced">
+                        <p class="m-text-spaced m-text-lined m-text-opacity-mid">Email: 243031504@qq.com</p>
+                        <p class="m-text-spaced m-text-lined m-text-opacity-mid">Wechat: 15118821145</p>
+                        <p class="m-text-spaced m-text-lined m-text-opacity-mid">QQ: 243031504</p>
+                    </div>
+                </div>
+
+                <!--想说的话-->
+                <div class="six wide column">
+                    <h4 class="ui inverted header">想说的话</h4>
+                    <p class="m-text-spaced m-text-lined m-text-opacity-mid" th:text="#{footer.sentence}">
+                        《心流》里面写到：
+                        “掌控生命孰非易事，有时根本就是一种痛苦，但日积月累的最优体验会汇集成一种掌控感”
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="ui inverted section divider"></div>
+
+            <!--&lt;!&ndash;网站运行时间&ndash;&gt;-->
+            <!--<div>-->
+            <!--<strong>网站已经运行：</strong>-->
+            <!--<strong id="WebRuntime" style="color: #EE7621"></strong>-->
+            <!--</div>-->
+
+            <!--Copyright-->
+            <p class="m-text-spaced m-text-lined m-text-opacity-mid">
+                Copyright © 2020 - 2021 HPL-Blog Designed by Huangpenglong.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- JS -->
+    <th:block th:fragment="script">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+        <script src="../../static/lib/editormd/editormd.min.js" th:src="@{/lib/editormd/editormd.min.js}"></script>
+    </th:block>
+
+
+    <!--获取页脚的数据-->
+    <script>
+        $('#footerData-container').load("/front/footerData");
+    </script>
+
+</body>
+</html>

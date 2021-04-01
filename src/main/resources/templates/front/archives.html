@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--suppress ALL-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="front/_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>归档</title>
+
+    <!-- CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../../static/css/my.css">
+</head>
+<body id="particle_background">
+<!-- HTML -->
+    <!----------------------------------导航---------------------------------->
+    <nav th:replace="front/_fragments :: nav(4)" class="ui inverted attached segment m-shadow-small-black">
+        <div class="ui container">
+
+            <div class="ui inverted tabular stackable menu m-nav-padding-min">
+
+                <h1 class="ui blue header item">HPL-Blog</h1>
+                <a href="#" class="item m-mobile-hide m-item"><i class="home icon"></i> 首页</a>
+                <a href="#" class="item m-mobile-hide m-item"><i class="sort icon"></i>分类</a>
+                <a href="#" class="item m-mobile-hide m-item"><i class="tags icon"></i>标签</a>
+                <a href="#" class="active item m-mobile-hide m-item"><i class="clone icon"></i>归档</a>
+                <a href="#" class="item m-mobile-hide m-item"><i class="male icon"></i>关于我</a>
+
+                <div class="right item m-mobile-hide m-item">
+                    <div class="ui icon input">
+                        <input type="text" placeholder="搜索">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+
+                <a href="#" class="ui menu toggle black icon button m-mobile-show">
+                    <i class="sidebar icon"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!----------------------------------归档---------------------------------->
+    <div class="m-container-mid m-nav-padding-mid m-opacity-s">
+
+        <!--归档---头部信息-->
+        <div class="ui top attached large padded segment ">
+            <div class="ui middle aligned two column grid">
+                <div class="column">
+                    <h2 class="ui blue header m-text-spaced-massive">归档</h2>
+                </div>
+                <div class="right aligned column">
+                    共 <h3 class="ui large orange header m-display-inline-block" th:text="${blogCount}">121</h3> 篇博客
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 归档时间线 -->
+        <div style="margin-top: 2em !important;" th:each="listBlog : ${mapBlog}">
+            <h2 class="ui horizontal divider header" th:text="${listBlog.key}" style="color: #FFFFFF;">2020</h2>
+            <div class="ui vertical fluid menu">
+
+                <a th:each="blog : ${listBlog.value}" th:href="@{/front/blog/{blogId}(blogId = ${blog.id})}" target="_blank" class="item">
+                    <div class="ui grid">
+
+                        <div class="twelve wide column">
+                            <i class=" black circle icon m-margin-min"></i>
+                            <span th:text="${blog.title}">服务器安装jdk、tomcat和mysql</span>
+                            <div class="ui left pointing label" th:text="${#dates.month(blog.updateTime)}+'月'+${#dates.day(blog.updateTime)}+'日'">10月27日</div>
+                        </div>
+
+                        <div class="right aligned four wide column">
+                            <div class="ui teal label" th:text="${blog.flag}">
+                                原创
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!----------------------------------底部---------------------------------->
+    <footer th:replace="front/_fragments :: footer" class="ui inverted vertical segment m-nav-padding-mid">
+
+        <div class="ui center aligned container">
+
+            <!-- grid垂直分成16块,但是人为分成四大块(3,3,3,7) -->
+            <div class="ui inverted divided stackable grid">
+
+                <!--图片-->
+                <div class="three wide column">
+                    <div class="ui centered card " style="width:14em;">
+                        <img src="../static/images/wechat.jpg" alt="" class="ui rounded image" th:src="@{images/wechat.jpg}">
+                    </div>
+                </div>
+                <!--最新博客-->
+                <div class="three wide column">
+                    <h4 class="ui inverted header ">最新博客</h4>
+                    <div class="ui inverted link list m-text-spaced">
+                        <a href="#" class="item">AAA</a>
+                        <a href="#" class="item">BBBB</a>
+                        <a href="#" class="item">CCCCC</a>
+                        <a href="#" class="item">DDDDDD</a>
+                    </div>
+                </div>
+                <!--请联系我-->
+                <div class="three wide column">
+                    <h4 class="ui inverted header">请联系我</h4>
+                    <div class="ui inverted link list m-text-spaced">
+                        <p class="m-text-spaced m-text-lined m-text-opacity-mid">Email: 243031504@qq.com</p>
+                        <p class="m-text-spaced m-text-lined m-text-opacity-mid">Wechat: 15118821145</p>
+                        <p class="m-text-spaced m-text-lined m-text-opacity-mid">QQ: 243031504</p>
+                    </div>
+                </div>
+                <!--想说的话-->
+                <div class="six wide column">
+                    <h4 class="ui inverted header">想说的话</h4>
+                    <p class="m-text-spaced m-text-lined m-text-opacity-mid">
+                        Semantic 2.4 brings a new components for handling content loading ui placeholder, as well as a new
+                        type of segment used to reserve space for content: ui placeholder segment.
+                    </p>
+                </div>
+            </div>
+
+            <!--Copyright-->
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-spaced m-text-lined m-text-opacity-mid">
+                Copyright © 2020 - 2021 HPL-Blog Designed by Huangpenglong.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+
+<!-- JS -->
+    <th:block th:replace="front/_fragments :: script">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    </th:block>
+    <script>
+
+        //在手机屏幕宽度的情况下，点击“小按钮”触发该事件
+        $('.menu.toggle').click(function () {
+            $('.m-item').toggleClass('m-mobile-hide');
+        });
+
+
+    </script>
+</body>
+</html>

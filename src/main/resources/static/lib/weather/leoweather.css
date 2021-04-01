@@ -1,0 +1,15 @@
+.skin2 { display:inline-block; border:1px solid #DDDDDD;}
+.skin2 .mid { overflow:hidden; border-bottom:1px solid #DDDDDD;}
+.skin2 .mid .fl { float:left; background:#6495ED; padding:20px; }
+.skin2 .mid .fl img { height:80px; }
+.skin2 .mid .fr {text-align: center; }
+.skin2 .mid .fr h2 { font-size:20px; line-height:28px; margin:0; }
+.skin2 .mid .fr p { font-size:20px; line-height:28px; margin:0; }
+.skin2 .bot { font-size:16px; padding:20px; }
+.skin2 .bot ul { display:inline-block; margin:0; padding:0; list-style:none; }
+.skin2 .bot li { border-top:1px dashed #DDDDDD; padding-top:10px; margin-top:10px; }
+.skin2 .bot li:first-child { border-top:0; padding-top:0; margin-top:0; }
+.skin2 .bot li * { display:inline-block; vertical-align:top; }
+.skin2 .bot li em {width: 100px; }
+.skin2 .bot li span { width:117px; }
+.skin2 .bot li strong {width:117px; }

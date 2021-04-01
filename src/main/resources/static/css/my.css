@@ -1,0 +1,214 @@
+@charset "UTF-8";/*!
+/* body */
+body{
+    background: url(../images/bg1.jpg) no-repeat center center fixed;
+    background-size: cover;
+    /*等比扩大填充*/
+
+    /*background-size: contain;*/
+    /*等比缩小适应*/
+    background-size: 100% 100%;
+}
+/*
+body{
+    background-image: url("../images/bg.png");
+}
+*/
+/* container */
+.m-container-min{
+    max-width: 60em !important;
+    margin:auto !important;
+}
+.m-container-mid{
+    max-width: 70em !important;
+    margin:auto !important;
+}
+.m-container-large{
+    max-width: 85em !important;
+    margin:auto !important;
+}
+/* padding margin */
+.m-nav-padding-min{
+     /*padding: 0.1em 0 0.1em 0!important;*/
+     padding-top: 0.1em !important;
+    padding-bottom: 0.1em !important;
+ }
+.m-nav-padding-small{
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+}
+.m-nav-padding-mid{
+    padding-top: 3em !important;
+    padding-bottom: 3em !important;
+}
+.m-nav-padding-large{
+    padding-top: 9em !important;
+    padding-bottom: 4em !important;
+}
+.m-padding-left-right{
+    padding-left: 4em !important;
+    padding-right: 4em !important;
+}
+.m-padding-left-right-min{
+    padding-left: 3em !important;
+    padding-right: 3em !important;
+}
+
+.m-margin-left-right-min{
+    margin:0.2em 0.4em 0.2em 0.4em !important;
+}
+.m-margin-min{
+    margin:0.5em 1em 0.5em 1em !important;
+}
+.m-margin-mid{
+    margin:0.8em 1.2em 0.8em 1.2em !important;
+}
+.m-margin-top-small{
+    margin-top: 2em !important;
+}
+.m-nav-margin-negative{
+    margin-bottom: -0.5em !important;
+}
+
+.m-margin-top-bottom-min{
+    margin-top: 0.3em !important;
+    margin-bottom: 0.3em !important;
+}
+.m-margin-bottom-min{
+    margin-bottom: 0.5em !important;
+}
+
+/* text */
+.m-text-spaced{
+    letter-spacing: 1px !important;
+}
+.m-text-spaced-large{
+    letter-spacing: 3px !important;
+}
+.m-text-spaced-massive{
+    letter-spacing: 5px !important;
+}
+
+.m-text-weight-tiny{
+    font-weight: 200 !important;
+}
+.m-text-weight-mid{
+    font-weight: 400 !important;
+}
+.m-text-weight-huge{
+    font-weight: 900 !important;
+}
+.m-text-lined{
+    line-height: 1.8 !important;
+}
+
+.m-text-size-small{
+     font-size: 1em !important;
+ }
+
+.m-text-size-mid{
+    font-size: 15px !important;
+}
+.m-text-opacity-mid{
+    opacity : 0.8 !important;
+}
+
+
+/* display */
+.m-display-inline-block{
+    display:inline-block !important;
+}
+
+/* border */
+.m-border-zero{
+    border-top: 0px solid !important;
+    border-bottom: 0px solid !important;
+}
+
+/* color */
+.m-color-black{
+    color: #000 !important;
+}
+.m-border-bottom{
+    border-bottom: 2px solid #0E6EB8 !important;
+}
+
+
+/* shadow */
+.m-shadow-small-black{
+    -webkit-box-shadow:0 2px 5px rgba(0, 0, 0, 0.5) !important;
+    box-shadwo: 0 2px 5px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* mobile */
+.m-mobile-show{
+    display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    .m-mobile-hide{
+        display: none !important;
+    }
+    .m-mobile-show{
+        display: block !important;
+    }
+    .m-mobile-full{
+        width:100% !important;
+    }
+}
+
+/* position */
+.m-fixed{
+    position: fixed !important;
+    z-index: 1 !important;
+}
+.m-position-RB{
+    right: 1% !important;
+    bottom:10% !important;
+}
+
+.m-fixed-nav{
+    position: fixed !important;
+    z-index: 999 !important;
+    height: 110px !important;
+    opacity: 0.5 !important;
+    top: 0;
+}
+
+/* 登录页面动态背景 */
+#world {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(#e4e0ba, #f7d9aa);
+}
+
+/* button */
+.m-button-disabled-grey{
+    background-color: #F5F5F5!important;
+    color: #808080 !important;
+    pointer-events: none !important;
+}
+
+/* nav */
+.m-nav-hover:hover{
+     opacity: 0.9 !important;
+ }
+.m-content-hover:hover{
+    opacity: 1 !important;
+}
+
+/*opacity*/
+.m-opacity-s{
+    opacity: 0.9!important;
+}
+.m-opacity-m{
+    opacity: 0.7!important;
+}
+.m-opacity-ml{
+    opacity: 0.6!important;
+}
+.m-opacity-l{
+    opacity: 0.5!important;
+}
